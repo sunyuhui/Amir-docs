@@ -12018,7 +12018,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "container"
   }, [_c('div', {
     staticClass: "index-content"
-  }, [_c('p', [_vm._v("基于Vue的组件库dddd")])])])
+  }, [_c('p', [_vm._v("基于Vue的组件库")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
