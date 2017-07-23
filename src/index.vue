@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p class="title">Amir -- Vue组件库ddd</p>
+    <p class="title">Amir -- Vue组件库</p>
 
     <div class="all-demos">
       <amir-button></amir-button>
