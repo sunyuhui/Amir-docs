@@ -4,7 +4,7 @@ import router from './router';
 import 'normalize.css';
 import 'github-markdown-css';
 import Amir from 'amir-ui';
-// import 'amir-ui/dist/amir.css';
+import 'amir-ui/dist/amir.css';
 import './common/index.css';
 
 import Header from './components/header.vue';
