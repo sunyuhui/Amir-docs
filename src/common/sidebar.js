@@ -5,6 +5,10 @@ const nav = [
 			{
 				name: "安装",
 				url: "/#/docs"
+			},
+			{
+				name: "使用",
+				url: "/#/use"
 			}
 		]
 	},

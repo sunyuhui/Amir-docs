@@ -5,7 +5,7 @@
 			<div class="item-container">
 				<a class="item" href="/">首页</a>
 				<a class="item" href="/#/docs">组件</a>
-				<a class="item" href="/#/log">changeLog</a>
+				<a class="item" href="/#/changelog">changeLog</a>
 			</div>
 		</div>
 	</div>
