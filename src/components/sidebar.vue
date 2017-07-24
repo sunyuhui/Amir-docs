@@ -3,7 +3,7 @@
 		<template v-for="item in sidebar">
 			<span class="title">{{item.title}}</span>
 			<template v-for="nav in item.subNav">
-				<a :href="nav.url" class="nav">{{nav.name}}</a>
+				<a :href="nav.url" :class="{nav: true, active: nav.url.indexOf(active) !== -1 }">{{nav.name}}</a>
 			</template>
 		</template>
 	</div>
@@ -12,6 +12,11 @@
 <script>
 	import SideBar from '../common/sidebar.js'
 	export default {
+		props: {
+			active: {
+				type: String
+			}
+		},
 		data() {
 			return {
 				sidebar: SideBar

@@ -3,9 +3,9 @@
 		<div class="header">
 			<span class="title">Amir</span>
 			<div class="item-container">
-				<a class="item" href="/">首页</a>
-				<a class="item" href="/#/docs">组件</a>
-				<a class="item" href="/#/changelog">changeLog</a>
+				<a :class="{item: true, active: active === 'index'}" href="/">首页</a>
+				<a :class="{item: true, active: active === 'docs'}" href="/#/docs">组件</a>
+				<a :class="{item: true, active: active === 'log'}" href="/#/changelog">changeLog</a>
 			</div>
 		</div>
 	</div>
@@ -14,7 +14,11 @@
 
 <script>
 	export default {
-
+		props: {
+			active: {
+				type: String
+			}
+		}
 	}
 </script>
 <style lang="less">
@@ -41,9 +45,14 @@
 					margin-left: 10px;
 					color:#fff;
 
+					&.active {
+						color:#30b6aa;
+					}
+
 					&:hover {
 						cursor:pointer;
 						text-decoration:none;
+						color:#30b6aa;
 					}
 				}
 			}

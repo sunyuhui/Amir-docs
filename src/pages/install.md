@@ -1,7 +1,7 @@
-<docs-header></docs-header>
+<docs-header :active="headerActive"></docs-header>
 
 <div class="container">
-	<docs-sidebar></docs-sidebar>
+	<docs-sidebar :active="sidebarActive"></docs-sidebar>
 	<div class="content">
 
 ## 安装
@@ -22,6 +22,17 @@
 
 	<link rel="stylesheet" type="text/css" href="https://unpkg.com/amir-ui/dist/amir.css">
 
+
+<script>
+	export default {
+		data() {
+			return {
+				sidebarActive: 'docs',
+				headerActive: 'docs'
+			}
+		}
+	}
+</script>
 
 </div>
 </div>

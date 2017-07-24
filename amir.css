@@ -1430,9 +1430,13 @@ body {
   margin-left: 10px;
   color: #fff;
 }
+.header-container .header .item-container .item.active {
+  color: #30b6aa;
+}
 .header-container .header .item-container .item:hover {
   cursor: pointer;
   text-decoration: none;
+  color: #30b6aa;
 }
 
 .sidebar-container {

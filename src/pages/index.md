@@ -1,4 +1,4 @@
-<docs-header></docs-header>
+<docs-header :active="headerActive"></docs-header>
 
 <div class="container">
 	<div class="index-content">
@@ -6,3 +6,14 @@
 	</div>
 </div>
 
+
+
+<script>
+	export default {
+		data() {
+			return {
+				headerActive: 'index'
+			}
+		}
+	}
+</script>
