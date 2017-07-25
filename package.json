@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.sankuai.com/~sunhui04/amir-ui.git"
+    "url": "git@github.com:sunyuhui/Amir-ui-docs.git"
   },
   "keywords": [
     "vue",
@@ -19,7 +19,7 @@
   "author": "sunyuhui",
   "license": "ISC",
   "dependencies": {
-    "amir-ui": "0.0.2",
+    "amir-ui": "0.0.6",
     "connect-history-api-fallback": "^1.3.0",
     "css-loader": "^0.28.4",
     "github-markdown-css": "^2.8.0",

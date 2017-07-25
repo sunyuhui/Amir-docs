@@ -8,7 +8,7 @@ const nav = [
 			},
 			{
 				name: "使用",
-				url: "/#/use"
+				url: "/#/docs/use"
 			}
 		]
 	},
@@ -17,7 +17,33 @@ const nav = [
 		subNav: [
 			{
 				name: "Loading",
-				url: "/#/loading"
+				url: "/#/docs/loading"
+			},
+			{
+				name: "Toast",
+				url: "/#/docs/toast"
+			}
+		]
+	},
+	{
+		title: "表单",
+		subNav: [
+			{
+				name: "Button",
+				url: "/#/docs/button"
+			},
+			{
+				name: "Confirm",
+				url: "/#/docs/confirm"
+			}
+		]
+	},
+	{
+		title: "布局",
+		subNav: [
+			{
+				name: "Pagination",
+				url: "/#/docs/pagination"
 			}
 		]
 	}
