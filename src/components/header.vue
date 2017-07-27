@@ -6,7 +6,9 @@
 				<a :class="{item: true, active: active === 'index'}" href="/">首页</a>
 				<a :class="{item: true, active: active === 'docs'}" href="/#/docs">组件</a>
 				<a :class="{item: true, active: active === 'log'}" href="/#/changelog">changeLog</a>
+				<i class="github-icon"></i>
 			</div>
+
 		</div>
 	</div>
 
@@ -26,7 +28,7 @@
 	.header-container {
 		width: 100%;
 		height:67px;
-		background: #202436;
+		// background: #202436;
 		.header {
 			max-width: 980px;
 			min-width: 200px;
@@ -55,7 +57,18 @@
 						color:#30b6aa;
 					}
 				}
+
+				.github-icon {
+					display: inline-block;
+					width:16px;
+					height:16px;
+					background: url(../img/a.png) no-repeat center;
+					// background:#f00;
+					background-size: cover;
+					z-index: 1000;
+				}
 			}
+
 		}
 	}
 </style>
