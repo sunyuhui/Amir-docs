@@ -21,6 +21,8 @@
 		}
 	}
 
+#### Demo
+
 <a-button @click="emitClick">弹出toast</a-button>
 <div class="toast-container">
 	<a-toast :show.sync="showToast">Amir--toast</a-toast>

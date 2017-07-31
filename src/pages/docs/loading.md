@@ -14,6 +14,8 @@
 		}
 	}
 
+#### Demo
+
 <div class="loading-container">
 	<a-loading v-show="showLoading"></a-loading>
 </div>
