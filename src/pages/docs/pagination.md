@@ -21,22 +21,23 @@
 		}
 	}
 
+#### Demo
+
 <a-pagination :current-page.sync="currentPage" :total-page="totalPage" @switchPage="switchPage" :goto="goto"></a-pagination>
 
-#### 参数
+#### Props
 
-currentPage: 当前页码，非必须，默认为1
+<a-table :tableData="propTableData" :tableHead="propTableHead"></a-table>
 
-totalPage:总页码，必须
 
-switchPage: 切换页码后的回调函数
+#### Events
 
-goto: 是否展示跳转到**页, 默认否
-
+<a-table :tableData="eventTableData" :tableHead="eventTableHead"></a-table>
 
 
 
 <script>
+	import Head from '../../common/table.js'
 	export default {
 		data() {
 			return {
@@ -44,7 +45,43 @@ goto: 是否展示跳转到**页, 默认否
 				headerActive: 'docs',
 				currentPage: 4,
 				totalPage: 24,
-				goto: true
+				goto: true,
+				propTableData: [
+					{
+						name: "currentPage",
+						description: "当前页码",
+						type: "Number",
+						necessary: "否",
+						double: "否",
+						default: "1"
+					},
+					{
+						name: "totalPage",
+						description: "总页码数",
+						type: "Number",
+						necessary: "是",
+						double: "否",
+						default: "-"
+					},
+					{
+						name: "goto",
+						description: "是否展示跳转到**页",
+						type: "Boolean",
+						necessary: "否",
+						double: "否",
+						default: "false"
+					}
+				],
+				propTableHead: Head.propHead,
+				eventTableData: [
+					{
+						name: "switchPage",
+						description: "点击页码之后触发的事件",
+						param: "点击之后的当前页码"
+					}
+				],
+				eventTableHead: Head.eventHead
+
 			}
 		},
 		methods: {
