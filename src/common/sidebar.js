@@ -22,6 +22,10 @@ const nav = [
 			{
 				name: "Toast",
 				url: "/#/docs/toast"
+			},
+			{
+				name: "Confirm",
+				url: "/#/docs/confirm"
 			}
 		]
 	},
@@ -31,10 +35,6 @@ const nav = [
 			{
 				name: "Button",
 				url: "/#/docs/button"
-			},
-			{
-				name: "Confirm",
-				url: "/#/docs/confirm"
 			}
 		]
 	},
@@ -44,6 +44,15 @@ const nav = [
 			{
 				name: "Pagination",
 				url: "/#/docs/pagination"
+			}
+		]
+	},
+	{
+		title: "数据",
+		subNav: [
+			{
+				name: "Table",
+				url: "/#/docs/table"
 			}
 		]
 	}

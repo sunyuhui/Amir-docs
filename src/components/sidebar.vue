@@ -34,7 +34,7 @@
 		border:1px solid #d8d8d8;
 		span, a {
 			display: block;
-			padding-left: 30px;
+			padding-left: 20px;
 		}
 		.title {
 			height:44px;
@@ -48,10 +48,11 @@
 			height:30px;
 			line-height: 30px;
 			margin:1px 0;
+			padding-left: 45px;
 			&.active {
 				color:#30b6aa;
 				border-left: 2px solid #30b6aa;
-				padding-left: 28px;
+				padding-left: 43px;
 			}
 			&:hover {
 				background:#eee;

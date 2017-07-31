@@ -28,6 +28,8 @@ import Confirm from '../pages/docs/confirm.md'
 //pagination
 import Pagination from '../pages/docs/pagination.md'
 
+import Table from '../pages/docs/table.md'
+
 
 //-------------------文档具体内容 end
 
@@ -70,6 +72,10 @@ let routes = [
 			{
 				path: 'pagination',
 				component: Pagination
+			},
+			{
+				path: 'table',
+				component: Table
 			}
 		]
 
