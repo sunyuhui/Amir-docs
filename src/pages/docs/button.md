@@ -26,18 +26,45 @@
 <p>big: <a-button class="big"></a-button></p>
 <p>bigger: <a-button class="bigger"></a-button></p> 
 
-#### 参数
+#### Props
 
-无
+<a-table :tableData="propTableData" :tableHead="propTableHead"></a-table>
+
+备注：button的样式使用class控制，可选class为：`big`、`bigger`、`disabled`、`hot`
+
+#### Events
+
+<a-table :tableData="eventTableData" :tableHead="eventTableHead"></a-table>
+
 
 
 
 <script>
+	import Head from '../../common/table.js'
 	export default {
 		data() {
 			return {
 				sidebarActive: '/#/docs/button',
 				headerActive: 'docs',
+				propTableData: [
+					{
+						name: "class",
+						description: "按钮ClassName",
+						type: "String",
+						necessary: "否",
+						double: "否",
+						default: "''"
+					}
+				],
+				propTableHead: Head.propHead,
+				eventTableData: [
+					{
+						name: "click",
+						description: "按钮点击之后触发的事件",
+						param: "无"
+					}
+				],
+				eventTableHead: Head.eventHead
 			}
 		},
 		methods: {
