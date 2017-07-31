@@ -17,3 +17,6 @@ body {
 	position: relative;
 	margin-left:220px;
 }
+table {
+	display:inline-table!important;
+}

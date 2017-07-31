@@ -1416,6 +1416,36 @@ template {
 .amir-confirm .container .content .cancel-button[data-v-15a7a210] {
   margin-right: 20px;
 }
+
+table[data-v-1632adc6] {
+  min-width: 760px;
+  min-height: 40px;
+  font-size: 14px;
+  color: #666;
+  border-collapse: collapse;
+}
+table.border th[data-v-1632adc6] {
+  border: 1px solid #eaeaea;
+}
+table.border td[data-v-1632adc6] {
+  border: 1px solid #eaeaea;
+  border-top: none;
+}
+table th[data-v-1632adc6] {
+  background: #fafafa;
+}
+table th[data-v-1632adc6],
+table td[data-v-1632adc6] {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+table tr[data-v-1632adc6]:hover {
+  background: #fafafa;
+}
+table td a[data-v-1632adc6] {
+  color: #3dc6b6;
+}
 body {
 	font-family: PingFangSC-Light!important;
 }
@@ -1435,6 +1465,9 @@ body {
 	position: relative;
 	margin-left:220px;
 }
+table {
+	display:inline-table!important;
+}
 
 .header-container {
   width: 100%;
@@ -1450,7 +1483,11 @@ body {
   color: #fff;
 }
 .header-container .header .title {
+  color: #fff;
   font-size: 25px;
+}
+.header-container .header .title:hover {
+  text-decoration: none;
 }
 .header-container .header .item-container {
   display: inline-block;
@@ -1468,6 +1505,14 @@ body {
   text-decoration: none;
   color: #30b6aa;
 }
+.header-container .header .item-container .github-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABz0lEQVQ4T42SMWtTURTH/+fdm5cUW/tK6FBtIB0UQwpmEEqnVkIRN7PFrX6D+gHEiEs3/QCC3apTcFKH0HQq3VKopOjQQLOIRButJLl59x65T17JS2Pqmc6955wf/3P4E8YE72RzYHPNsLPGwIHMf9oabqdR87qS3QDoKQAvqDO3wXpTrB1tXgrQlcUSADs8Kp6J/KGtn0dEAe/cShsjj8et5Tj+At09aoQ9EYBfya4T6PXYu4AfDd4iAgjlv/rQweTMdRSXvgesoXdkjZGAUMGv406QTi1MDIr6f4Bq+8GgOy0vB3A57XViV8oyhlUhCdpJQst0MCj8BoRpQfsMv4/qRP93gQqNU1s7X6FdzmwQ0Yt4AqD4LFRiOXJLt7sH7n1Dr2ttwY+nC/WXEcDPcmaLgeLklBNXiTvQYi4CEP4J3F4NZ2emS4y3Vwv19QjAPvz3mSK5YruXWIZxkhGAY1qIWxVKP5T3629G+iCAVBarfff2ipapCwpi6mBX5g9X/+lEW7Bu7FPyo3KXboLcv72s4Kr9zzFu3Rt04YUVQvKPkudRar7m3sg17Z/6Upvnk2ZupnQaXH6sAlv8+jz1gLVZYUHvHJAX5nNPmtVhwB8lb7sRpkrPDwAAAABJRU5ErkJggg==) no-repeat center;
+  background-size: cover;
+  z-index: 1000;
+}
 
 .sidebar-container {
   float: left;
@@ -1479,7 +1524,7 @@ body {
 .sidebar-container span,
 .sidebar-container a {
   display: block;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 .sidebar-container .title {
   height: 44px;
@@ -1493,11 +1538,12 @@ body {
   height: 30px;
   line-height: 30px;
   margin: 1px 0;
+  padding-left: 45px;
 }
 .sidebar-container .nav.active {
   color: #30b6aa;
   border-left: 2px solid #30b6aa;
-  padding-left: 28px;
+  padding-left: 43px;
 }
 .sidebar-container .nav:hover {
   background: #eee;
