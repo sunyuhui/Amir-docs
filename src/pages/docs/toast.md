@@ -26,22 +26,44 @@
 	<a-toast :show.sync="showToast">Amir--toast</a-toast>
 </div>
 
-#### 参数
+#### Props
 
-show: 是否展示，必须
 
-time: 间隔时间，非必须，单位秒，默认2
+<a-table :tableData="tableData" :tableHead="tableHead"></a-table>
 
+#### Events
+
+无
 
 
 
 <script>
+	import Head from '../../common/table.js'
 	export default {
 		data() {
 			return {
 				sidebarActive: '/#/docs/toast',
 				headerActive: 'docs',
-				showToast: false
+				showToast: false,
+				tableData: [
+					{
+						name: "show",
+						description: "是否展示",
+						type: "Boolean",
+						necessary: "是",
+						double: "是",
+						default: "false"
+					},
+					{
+						name: "time",
+						description: "消失间隔时间(单位秒)",
+						type: "Number",
+						necessary: "否",
+						double: "否",
+						default: "2"
+					}
+				],
+				tableHead: Head.propHead
 			}
 		},
 		methods: {

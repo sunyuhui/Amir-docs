@@ -21,7 +21,7 @@
 
 #### Props
 
-<a-table :border="border" :tableData="tableData" :tableHead="tableHead"></a-table>
+<a-table :tableData="tableData" :tableHead="tableHead"></a-table>
 
 #### Events
 
@@ -36,14 +36,13 @@
 				sidebarActive: '/#/docs/loading',
 				headerActive: 'docs',
 				showLoading: true,
-				border: true,
 				tableData: [
 					{
 						name: "show",
-						description: "是否展示Loading",
+						description: "是否展示",
 						type: "Boolean",
 						necessary: "是",
-						double: "是",
+						double: "否",
 						default: "false"
 					}
 				],
