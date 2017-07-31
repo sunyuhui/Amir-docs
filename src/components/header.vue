@@ -1,12 +1,12 @@
 <template>
 	<div class="header-container">
 		<div class="header">
-			<span class="title">Amir</span>
+			<a class="title" href="/">Amir</a>
 			<div class="item-container">
 				<a :class="{item: true, active: active === 'index'}" href="/">首页</a>
 				<a :class="{item: true, active: active === 'docs'}" href="/#/docs">组件</a>
 				<a :class="{item: true, active: active === 'log'}" href="/#/changelog">changeLog</a>
-				<i class="github-icon"></i>
+				<a class="item" href="https://github.com/sunyuhui/Amir-ui" target="_blank">Github</a>
 			</div>
 
 		</div>
@@ -28,7 +28,7 @@
 	.header-container {
 		width: 100%;
 		height:67px;
-		// background: #202436;
+		background: #202436;
 		.header {
 			max-width: 980px;
 			min-width: 200px;
@@ -37,7 +37,11 @@
 			margin:0 auto;
 			color:#fff;
 			.title {
+				color:#fff;
 				font-size: 25px;
+				&:hover {
+					text-decoration: none;
+				}
 			}
 			.item-container {
 				display: inline-block;
