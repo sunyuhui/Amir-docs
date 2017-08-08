@@ -30,6 +30,8 @@ import Pagination from '../pages/docs/pagination.md'
 
 import Table from '../pages/docs/table.md'
 
+import Input from '../pages/docs/input.md'
+
 
 //-------------------文档具体内容 end
 
@@ -76,6 +78,10 @@ let routes = [
 			{
 				path: 'table',
 				component: Table
+			},
+			{
+				path: 'input',
+				component: Input
 			}
 		]
 
