@@ -39,6 +39,10 @@ const nav = [
 			{
 				name: "Input",
 				url: "/#/docs/input"
+			},
+			{
+				name: "Select",
+				url: "/#/docs/select"
 			}
 		]
 	},

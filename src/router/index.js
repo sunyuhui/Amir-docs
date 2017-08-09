@@ -32,6 +32,8 @@ import Table from '../pages/docs/table.md'
 
 import Input from '../pages/docs/input.md'
 
+import Select from '../pages/docs/select.md'
+
 
 //-------------------文档具体内容 end
 
@@ -82,6 +84,10 @@ let routes = [
 			{
 				path: 'input',
 				component: Input
+			},
+			{
+				path: 'select',
+				component: Select
 			}
 		]
 
