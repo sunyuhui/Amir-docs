@@ -56,6 +56,10 @@ const nav = [
 			{
 				name: "Pagination",
 				url: "/#/docs/pagination"
+			},
+			{
+				name: "Dialog",
+				url: "/#/docs/dialog"
 			}
 		]
 	},
