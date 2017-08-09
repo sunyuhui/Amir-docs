@@ -34,7 +34,7 @@
 
 #### Events
 
-无
+<a-table :tableData="eventTableData" :tableHead="eventTableHead"></a-table>
 
 </div>
 </div>
@@ -86,9 +86,9 @@
 				propTableHead: Head.propHead,
 				eventTableData: [
 					{
-						name: "click",
-						description: "按钮点击之后触发的事件",
-						param: "无"
+						name: "change",
+						description: "改变选项之后触发的事件",
+						param: "选中的选项的value值"
 					}
 				],
 				eventTableHead: Head.eventHead

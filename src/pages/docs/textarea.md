@@ -34,7 +34,7 @@
 
 #### Events
 
-无
+<a-table :tableData="eventTableData" :tableHead="eventTableHead"></a-table>
 
 </div>
 </div>
@@ -100,6 +100,14 @@
 					}
 				],
 				propTableHead: Head.propHead,
+				eventTableData: [
+					{
+						name: "input",
+						description: "输入内容后触发的事情",
+						param: "输入之后的value"
+					}
+				],
+				eventTableHead: Head.eventHead
 			}
 		}
 	}
