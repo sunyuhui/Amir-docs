@@ -43,6 +43,10 @@ const nav = [
 			{
 				name: "Select",
 				url: "/#/docs/select"
+			},
+			{
+				name: 'Textarea',
+				url: '/#/docs/textarea'
 			}
 		]
 	},

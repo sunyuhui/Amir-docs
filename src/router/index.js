@@ -34,6 +34,8 @@ import Input from '../pages/docs/input.md'
 
 import Select from '../pages/docs/select.md'
 
+import Textarea from '../pages/docs/textarea.md'
+
 
 //-------------------文档具体内容 end
 
@@ -88,6 +90,10 @@ let routes = [
 			{
 				path: 'select',
 				component: Select
+			},
+			{
+				path: 'textarea',
+				component: Textarea
 			}
 		]
 
