@@ -47,6 +47,10 @@ const nav = [
 			{
 				name: 'Textarea',
 				url: '/#/docs/textarea'
+			},
+			{
+				name: 'Upload',
+				url: '/#/docs/upload'
 			}
 		]
 	},

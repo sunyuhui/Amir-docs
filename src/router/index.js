@@ -38,6 +38,8 @@ import Textarea from '../pages/docs/textarea.md'
 
 import Dialog from '../pages/docs/dialog.md'
 
+import Upload from '../pages/docs/upload.md'
+
 
 //-------------------文档具体内容 end
 
@@ -100,6 +102,10 @@ let routes = [
 			{
 				path: 'dialog',
 				component: Dialog
+			},
+			{
+				path: 'upload',
+				component: Upload
 			}
 		]
 
