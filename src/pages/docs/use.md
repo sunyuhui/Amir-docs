@@ -12,12 +12,24 @@
 
 像使用其他Vue插件那样使用即可，有一点需要注意的是需要单独引入Amir样式文件。
 
-	import Vue from 'vue';
+##### 完整引入
+
+	import Vue from 'vue'
 
 	import Amir from 'amir-ui'
 	import 'amir-ui/dist/amir.css'   //引入Amir样式文件
 
-	Vue.use(Amir);
+	Vue.use(Amir)
+
+##### 按需引入
+	
+	import Vue from 'vue'
+	import button from 'amir-ui/dist/button'
+	import 'amir-ui/dist/amir.css'   //引入Amir样式文件
+
+	Vue.component(button.name, button);
+
+如果将每个组件的样式文件都单独打包，那在引入时会非常繁琐，并且打包之后的CSS相比JS，文件大小很小，因此 Amir 选择了CSS文件不拆分，即使在按需引入时，CSS文件也需要完整引入。
 
 #### CDN 
 
